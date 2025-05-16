@@ -39,18 +39,18 @@ def main():
         print("2. Calcular total a pagar divido entre varias personas")
         print("3. Salir")
         print("=============================================")
-        opcion = input("Por favor, elige una opción (1-3): ").strip()
+        opcion = input("Elige una opción (1-3): ").strip()
 
         if opcion == "1":
             while True:
                 calcular_propina_total()
-                repetir = input("¿Deseas calcular nuevamente? (S/N): ").strip().lower()
+                repetir = input("¿Deseas calcular nuevamente? (Si/No): ").strip().lower()
                 if repetir != 's':
                     break
         elif opcion == "2":
             while True:
                 dividir_cuenta()
-                repetir = input("¿Deseas calcular nuevamente? (S/N): ").strip().lower()
+                repetir = input("¿Deseas calcular nuevamente? (Si/No): ").strip().lower()
                 if repetir != 's':
                     break
         elif opcion == "3":
